@@ -1,0 +1,17 @@
+.size {
+    margin-top: 20px;
+}
+
+.bg-gris {
+    background: #ECF0F3;
+}
+
+.bg-white {
+    background: #FFFFFF;
+}
+
+
+/* entrada invalida */
+/* input:invalid {
+    background-color: pink;
+} */
