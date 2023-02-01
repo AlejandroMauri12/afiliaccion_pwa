@@ -9,9 +9,14 @@
     <!-- css nativo -->
     <link rel="stylesheet" href="../css/estilosRegistor.css">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <link rel="icon" href="../images/favicon.ico">
     <!-- ajax -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -25,7 +30,8 @@
             <div class="container-fluid d-flex justify-content-center">
                 <a class="navbar-brand " href="#">
                     <div class="d-flex flex-column mb-3">
-                        <img class="rounded d-flex justify-content-center " src="../images/ico384.png" alt="Logo" width="100" height="100">
+                        <img class="rounded d-flex justify-content-center " src="../images/icoafiliaccion.svg"
+                            alt="Logo" width="100" height="100">
                     </div>
                 </a>
             </div>
@@ -49,7 +55,11 @@
                                 <!-- clave electoral -->
                                 <div class="col-md-6">
                                     <label for="claveElectoral" class="form-label">Clave Electoral</label>
-                                    <input type="text" class="form-control" id="claveElectoral" placeholder="Clave Electoral" required maxlength="18" onkeyup="this.value = this.value.toUpperCase();" onkeydown="longitud('claveElectoral','invalid-clave');" name="claveElectoral"></input>
+                                    <input type="text" class="form-control" id="claveElectoral"
+                                        placeholder="Clave Electoral" required maxlength="18"
+                                        onkeyup="this.value = this.value.toUpperCase();"
+                                        onkeydown="longitud('claveElectoral','invalid-clave');"
+                                        name="claveElectoral"></input>
                                     <div class="" id="invalid-clave"> Ingrese Clave Electoral.
                                     </div>
 
@@ -57,7 +67,9 @@
                                 <!-- Curp -->
                                 <div class="col-md-6">
                                     <label for="curp" class="form-label">Curp</label>
-                                    <input type="text" class="form-control" id="curp" placeholder="Curp" required maxlength="18" onkeyup="this.value = this.value.toUpperCase()" onkeydown="longitud('curp','invalid-curp');" name="curp">
+                                    <input type="text" class="form-control" id="curp" placeholder="Curp" required
+                                        maxlength="18" onkeyup="this.value = this.value.toUpperCase()"
+                                        onkeydown="longitud('curp','invalid-curp');" name="curp">
                                     <div class="" id="invalid-curp">
                                         Ingrese Curp
                                     </div>
@@ -65,22 +77,26 @@
                                 <!-- nombre -->
                                 <div class="col-12">
                                     <label for="Nombre" class="form-label">Nombre Completo</label>
-                                    <input type="text" class="form-control" id="Nombre" name="nombre" placeholder="Nombre(s)" required>
+                                    <input type="text" class="form-control" id="Nombre" name="nombre"
+                                        placeholder="Nombre(s)" required>
                                 </div>
                                 <!-- apellido paterno -->
                                 <div class="col-md-6">
                                     <label for="apellidoPat" class="form-label">Apellido Paterno</label>
-                                    <input type="text" class="form-control" id="apellidoPat" required name="apellidoPat">
+                                    <input type="text" class="form-control" id="apellidoPat" required
+                                        name="apellidoPat">
                                 </div>
                                 <!-- apellido materno -->
                                 <div class="col-md-6">
                                     <label for="apellidoMat" class="form-label">Apellido Materno</label>
-                                    <input type="text" class="form-control" id="apellidoMat" required name="apellidoMat">
+                                    <input type="text" class="form-control" id="apellidoMat" required
+                                        name="apellidoMat">
                                 </div>
                                 <!-- Fecha de nacimiento -->
                                 <div class="col-md-2">
                                     <label for="inputZip" class="form-label">Fecha de Nacimiento</label>
-                                    <input name=Fecha class="form-control mr-sm-2 my-2" placeholder="Fecha Nacimiento" type="date" required name="fecha" />
+                                    <input name=Fecha class="form-control mr-sm-2 my-2" placeholder="Fecha Nacimiento"
+                                        type="date" required name="fecha" id="myDate" value="2023-01-01" />
                                 </div>
                                 <!-- Genero -->
                                 <div class="col-md-4 border border-secondary rounded">
@@ -89,7 +105,8 @@
                                         <div class="col">
                                             <div class="p-3">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="genero" id="hombre" value="masculino" />
+                                                    <input class="form-check-input" type="radio" name="genero"
+                                                        id="hombre" value="masculino" />
                                                     <label class="form-check-label" for="masculino">
                                                         Hombre
                                                     </label>
@@ -99,7 +116,8 @@
                                         <div class="col ">
                                             <div class="p-3">
                                                 <div class="form-check ">
-                                                    <input class="form-check-input" type="radio" name="genero" id="mujer" value="femenino" />
+                                                    <input class="form-check-input" type="radio" name="genero"
+                                                        id="mujer" value="femenino" />
                                                     <label class="form-check-label" for="flexRadioDefault1">
                                                         Mujer
                                                     </label>
@@ -111,8 +129,8 @@
                                 <!-- seccion -->
                                 <div class="col-md-2">
                                     <label for="seccion" class="form-label">Seccion</label>
-                                    <select id="seccion" class="form-select" onchange="ShowSelectedSeccion();">
-                                        <option value="Elige una opcion">Elige una seccion</option>
+                                    <select id="seccion" class="form-select" required onchange="ShowSelectedSeccion();">
+                                        <option value="">Elige una opcion</option>
                                         <option value="1113">1113 URBANO-SAN CRISTOBAL DE LAS CASAS</option>
                                         <option value="1114">1114 URBANO-SAN CRISTOBAL DE LAS CASAS</option>
                                         <option value="1116">1116 URBANO-SAN CRISTOBAL DE LAS CASAS</option>
@@ -175,23 +193,27 @@
                                 <!-- Estado -->
                                 <div class="col-md-4">
                                     <label for="estado" class="form-label">Estado</label>
-                                    <select id="estado" class="form-select" onchange="ShowSelectedEstado();">
-                                        <option value="7Chiapas" selected>7 CHIAPAS</option>
+                                    <select id="estado" class="form-select" required onchange="ShowSelectedEstado()">
+                                        <option value="" selected>Elige una opcion</option>
+                                        <option value="1Chiapas">7 CHIAPAS</option>
                                     </select>
                                 </div>
                                 <!-- Municipio -->
+
                                 <div class="col-md-6">
                                     <label for="municipio" class="form-label">Municipio</label>
-                                    <select id="municipio" class="form-select" onchange="ShowSelectedMunicipio();">
-                                        <option value="Elige una opcion">Elige una opcion...</option>
-                                        <option value="7Chiapas" selected>77 SAN CRISTÓBAL DE LAS CASAS</option>
+                                    <select id="municipio" class="form-select" required
+                                        onchange="ShowSelectedMunicipio();">
+                                        <option selected value="">Elige una opcion</option>
+                                        <option value="77Chiapas">77 SAN CRISTÓBAL DE LAS CASAS</option>
                                     </select>
                                 </div>
                                 <!-- Localidad -->
                                 <div class="col-md-6">
                                     <label for="localidad" class="form-label">Localidad</label>
-                                    <select id="localidad" class="form-select">
-                                        <option value="Elige una opcion">Elige una opcion...</option>
+                                    <select id="localidad" class="form-select" required
+                                        onchange="ShowSelectedLocalidad();">
+                                        <option value="">Elige una opcion</option>
                                         <option value="1">1 URBANO(A)-SAN CRISTOBAL DE LAS CASAS</option>
                                         <option value="2">2 RURAL-AGUA BENDITA</option>
                                         <option value="4">4 RURAL-AGUA DE LEON</option>
@@ -264,7 +286,8 @@
                                 <!-- Numero de telefono -->
                                 <div class="col-md-2">
                                     <label for="numero" class="form-label">Núm.Telefónico</label>
-                                    <input type="number" class="form-control" id="numero" onkeyup="errorTelefono()" required name="numeroTelefono">
+                                    <input type="number" class="form-control" id="numero" onkeyup="errorTelefono()"
+                                        required name="numeroTelefono">
                                     <div id="erroNumero"></div>
                                 </div>
                                 <!-- Facebook-->
@@ -286,7 +309,8 @@
 
                                 <!-- Boton summit -->
 
-                                <button type="button" class="btn btn-primary" id="enviar" onclick="camposPrincipales()">Registrar</button>
+                                <button type="button" class="btn btn-primary" id="enviar"
+                                    onclick="camposPrincipales()">Registrar</button>
                             </form>
                         </div>
                     </div>
@@ -313,32 +337,24 @@
 
     //Datos de formulario
     let curp = document.getElementById("curp").value;
-    let nombre = document.getElementById("Nombre").value;
-    let apellidoPat = document.getElementById("apellidoPat").value;
-    let apellidoMat = document.getElementById("apellidoMat").value;
     let hombre = document.getElementById("hombre").value;
-    let seccion = "";
-    let selectSeccion = "";
-    let estado = ""
-    let selectEstado = "";
-    let municipio = ""
-    let selectmunicipio = "";
-    let localidad = ""
-    let selectLocalidad = "";
 
-    let colonia = document.getElementById("colonia").value;
-    let domicilio = document.getElementById("domicilio").value;
-    let numero = document.getElementById("numero").value;
+    var dateControl = document.querySelector('input[type="date"]');
+
+
+    const aux = [false, false, false, false];
+
+
+
     let facebook = document.getElementById("facebook").value;
     let instagram = document.getElementById("instagram").value;
     let otro = document.getElementById("otro").value;
 
-
+    var bandera = new Boolean(false);
 
 
     // longitud de cadenas
     function longitud(id, mensaje) {
-        console.log(id);
         let valor = document.getElementById(id).value;
         document.getElementById(mensaje).innerHTML = 'Valores insertados: ' + valor.length + "/18";
     }
@@ -358,21 +374,22 @@
         }
     }
 
+    //campos principales a validar
     function camposPrincipales() {
+
         let claveElectoral = document.getElementById("claveElectoral").value;
         let curp = document.getElementById("curp").value;
 
-        console.log(curp)
-        console.log(claveElectoral)
-
+        // clave electoral y curp esten vacios
         if (claveElectoral == "" || curp == "") {
             Swal.fire({
                 icon: "error",
                 title: "¡ERROR!",
-                text: "Algún Campo no ha sido completado",
+                text: "Clave elecotoral O Curp, no ha sido completado",
                 showConfirmButton: true,
                 confirmButtonText: "ACEPTAR"
             });
+            // clave electoral menor a 18 dig
         } else if (claveElectoral.length < 18) {
             Swal.fire({
                 icon: "error",
@@ -381,6 +398,7 @@
                 showConfirmButton: true,
                 confirmButtonText: "ACEPTAR"
             });
+            // Curp menor a 18 dig
         } else if (curp.length < 18) {
             Swal.fire({
                 icon: "error",
@@ -389,80 +407,181 @@
                 showConfirmButton: true,
                 confirmButtonText: "ACEPTAR"
             });
+            // Curp y Clave cumplen los 18 dig.
         } else if (claveElectoral.length === 18 && curp.length == 18) {
-            Swal.fire({
-                icon: "success",
-                title: "¡Correcto!",
-                text: "Cliente actualizado satisfactoriamente",
-                showConfirmButton: true,
-                confirmButtonText: "ACEPTAR"
-            });
 
-            //evento que se ejecuta despues de validar los campos principales
-            $.ajax({
-                url: "captura.php",
-                type: "post",
-                data: $("#formulario").serialize(),
-                success: function(resultado) {
-                    $("#resultado").html(resultado);
+            let nombre = document.getElementById("Nombre").value;
+            let apellidoPat = document.getElementById("apellidoPat").value;
+            let apellidoMat = document.getElementById("apellidoMat").value;
+
+            // Nombre y apellidos esten vacios
+            if (nombre == "" || apellidoMat == "" || apellidoPat == "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "¡ERROR!",
+                    text: "Nombre O apellidos, no ha sido completados",
+                    showConfirmButton: true,
+                    confirmButtonText: "ACEPTAR"
+                });
+            } else {
+                //consigue la fecha colocada 
+                var x = document.getElementById("myDate").value;
+                //valor de radioInputs
+                let genero = $("input:radio[name=genero]:checked").val();
+                // No hay elemento seleccionado H o M
+                if (genero == null) {
+                    Swal.fire({
+                        icon: "error",
+                        title: "¡ERROR!",
+                        text: "No se ha seleccionado un genero",
+                        showConfirmButton: true,
+                        confirmButtonText: "ACEPTAR"
+                    });
+                } else {
+
+                    let colonia = document.getElementById("colonia").value;
+                    let domicilio = document.getElementById("domicilio").value;
+                    //campos  colonia y domicilio no estan vacios
+                    if (colonia != "" && domicilio != "") {
+                        var banderAux = true;
+                        // bucle para encontrar una bandera en false y no poder seguir el proceso
+                        for (let i = 0; i < aux.length; i++) {
+                            if (aux[i] == false) {
+                                banderAux = false;
+                            }
+                        }
+                        //no se encontro una bandera en F prosigue con el proceso
+                        if (banderAux == true) {
+                            let numero = document.getElementById("numero").value;
+                            // valida de numero sea de long 10 y que no este vacio;
+                            if (numero.length == 10 && numero != "") {
+
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "¡Correcto!",
+                                    text: "Cliente actualizado satisfactoriamente",
+                                    showConfirmButton: true,
+                                    confirmButtonText: "ACEPTAR"
+                                });
+                                //evento que se ejecuta despues de validar los campos principales
+                                $.ajax({
+                                    url: "captura.php",
+                                    type: "post",
+                                    data: $("#formulario").serialize(),
+                                    success: function (resultado) {
+                                        $("#resultado").html(resultado);
+                                    }
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "¡ERROR!",
+                                    text: "No se ha completado numero de Telefono",
+                                    showConfirmButton: true,
+                                    confirmButtonText: "ACEPTAR"
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                icon: "error",
+                                title: "¡ERROR!",
+                                text: "No se escogio Seccion o municipio o Estado o Localidad",
+                                showConfirmButton: true,
+                                confirmButtonText: "ACEPTAR"
+                            });
+                            banderAux = true;
+                        }
+                    } else {
+                        Swal.fire({
+                            icon: "error",
+                            title: "¡ERROR!",
+                            text: "Domicilio O Colonia no se ha complentado",
+                            showConfirmButton: true,
+                            confirmButtonText: "ACEPTAR"
+                        });
+                    }
                 }
-            });
+            }
         }
-
-
     }
 
-    function send() {
-        camposPrincipales();
+
+    // variable de seleccion 
+    let seccion = "";
+    var selectSeccion = "";
+    let estado = ""
+    var selectEstado = "";
+    let municipio = ""
+    var selectmunicipio = "";
+    let localidad = ""
+    var selectLocalidad = "";
+
+    //devuelve T o F por cada funcion que la ejecute
+    function valoresAsignados(valor) {
+        if (valor == "Elige una opcion") {
+            bandera = false;
+        } else {
+            bandera = true;
+        }
+        return bandera;
     }
+
     //Valor de un selectd Seccion
     function ShowSelectedSeccion() {
+        let valor;
         seccion = document.getElementById("seccion");
         selectSeccion = seccion.options[seccion.selectedIndex].text
+
+        valor = valoresAsignados(selectSeccion);
+        aux[0] = valor;
     }
 
     //Valor de un selectd Estado
     function ShowSelectedEstado() {
+        let valor;
         estado = document.getElementById("estado");
         selectEstado = estado.options[estado.selectedIndex].text
+        console.log(selectEstado);
+        valor = valoresAsignados(selectEstado);
+        aux[1] = valor;
+
     }
 
     //Valor de un selectd municipio
     function ShowSelectedMunicipio() {
+        let valor;
         municipio = document.getElementById("municipio");
         selectMunicipio = municipio.options[municipio.selectedIndex].text
+        valor = valoresAsignados(selectMunicipio);
+        aux[2] = valor;
     }
 
     //Valor de un selectd localidad
     function ShowSelectedLocalidad() {
+        let valor;
         localidad = document.getElementById("localidad");
         selectLocalidad = localidad.options[localidad.selectedIndex].text
+        valor = valoresAsignados(selectLocalidad);
+        aux[3] = valor;
     }
 
     // espacio vacios curp y clave elecotoral
-    $("#claveElectoral").keyup(function() {
+    $("#claveElectoral").keyup(function () {
         let string = $("#claveElectoral").val();
         $("#claveElectoral").val(string.replace(/ /g, ""))
     });
 
-    $("#curp").keyup(function() {
+    $("#curp").keyup(function () {
         let string = $("#curp").val();
         $("#curp").val(string.replace(/ /g, ""))
     });
 
-    // evento que se ejecuta cuando da click en boton
-    // $("#enviar").click(function () {
+    //Se ejecuta cuando se oprimer el Boton
+    function send() {
+        camposPrincipales();
+    }
 
-    //     console.log("click")
-    //     $.ajax({
-    //         url: "captura.php",
-    //         type: "post",
-    //         data: $("#formulario").serialize(),
-    //         success: function (resultado) {
-    //             $("#resultado").html(resultado);
-    //         }
-    //     });
-    // });
+
 </script>
 
 </html>
